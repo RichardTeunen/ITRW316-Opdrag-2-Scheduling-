@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gbxProgressBars = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pnlObjects = new System.Windows.Forms.Panel();
             this.cbxAlgorithm = new System.Windows.Forms.ComboBox();
@@ -46,7 +47,6 @@
             this.btnDeleteAll = new System.Windows.Forms.Button();
             this.btnResetProgress = new System.Windows.Forms.Button();
             this.lblTimer = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.gbxProgressBars.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -65,6 +65,15 @@
             this.gbxProgressBars.TabIndex = 4;
             this.gbxProgressBars.TabStop = false;
             this.gbxProgressBars.Text = "   Thread Completion Progress";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(268, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Starting Time";
             // 
             // label12
             // 
@@ -226,7 +235,7 @@
             // 
             // btnStopped
             // 
-            this.btnStopped.Location = new System.Drawing.Point(24, 240);
+            this.btnStopped.Location = new System.Drawing.Point(24, 252);
             this.btnStopped.Name = "btnStopped";
             this.btnStopped.Size = new System.Drawing.Size(107, 23);
             this.btnStopped.TabIndex = 17;
@@ -262,15 +271,6 @@
             this.lblTimer.Size = new System.Drawing.Size(100, 13);
             this.lblTimer.TabIndex = 20;
             this.lblTimer.Text = "Time running: 0 sec";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(268, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Starting Time";
             // 
             // Form1
             // 
