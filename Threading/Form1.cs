@@ -62,7 +62,7 @@ namespace Threading
                 {
                     if (progressbarList[i].Value < progressbarList[i].Maximum && startList[i] <= timervalue)
                     {
-                        HighlightCurrentProcess(i);
+                        //HighlightCurrentProcess(i);
 
                         for (int x = 0; x < quantumsize; x++)
                         {
@@ -134,7 +134,7 @@ namespace Threading
                     {
                         if (!ClassDone(runningpriority, i) && (starttimes[priorityClasses[runningpriority][i]] <= timervalue))
                         {
-                            HighlightCurrentProcess(priorityClasses[runningpriority][i]);
+                            //HighlightCurrentProcess(priorityClasses[runningpriority][i]);
 
                             for (int x = 0; x < quantumsize; x++)
                             {
@@ -199,7 +199,7 @@ namespace Threading
             {
                 newProcessQueueIndex = (int) numericUpDownList[progressbarList.Count - newProcessCount].Value;
                 int quantumLength = Convert.ToInt32(Math.Pow(2, Convert.ToDouble(multipleQueues.Count - newProcessQueueIndex)));
-                HighlightCurrentProcess(progressbarList.Count - newProcessCount);
+                //HighlightCurrentProcess(progressbarList.Count - newProcessCount);
 
                 for (int z = 0; z < quantumLength; z++)
                 {
@@ -225,6 +225,7 @@ namespace Threading
             }
         }
 
+        /*
         public void HighlightCurrentProcess(int index)
         {
             labelList[index].ForeColor = Color.Green;
@@ -234,6 +235,7 @@ namespace Threading
 
             previousProcessIndex = index;
         }
+        */
 
         public void MultipleQueues()
         {
@@ -279,7 +281,7 @@ namespace Threading
                             if (progressbarList[progressbarIndex].Value < progressbarList[progressbarIndex].Maximum && startList[progressbarIndex] <= timervalue)
                             {
                                 progressbarList[progressbarIndex].PerformStep();
-                                HighlightCurrentProcess(progressbarIndex);
+                                //HighlightCurrentProcess(progressbarIndex);
                                 Thread.Sleep(100);
                             }
                         }
@@ -493,7 +495,7 @@ namespace Threading
             timervalue = 0;
             timerrunning = false;
             lblTimer.Text = "Time running: 0 sec";
-            labelList[previousProcessIndex].ForeColor = Color.Black;
+            //labelList[previousProcessIndex].ForeColor = Color.Black;
         }
 
 
